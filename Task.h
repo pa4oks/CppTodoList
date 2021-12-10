@@ -20,4 +20,5 @@ public:
     string display();
 };
 
+ostream& operator<<(ostream &stream, Task i);
 #endif //UNTITLED_TASK_H

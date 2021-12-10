@@ -9,6 +9,11 @@ string Task::display() {
     return "name: " + name +
            "\ndescription: " + description +
            "\ndueTo: " + to_string(dueTo) +
-           "\nTaskStatus: "  + (status == 0 ? "ACTIVE" : "RESOLVED")
+           "\nTaskStatus: " + (status == 0 ? "ACTIVE" : "RESOLVED")
            + "\n";
+}
+
+ostream &operator<<(ostream &stream, Task i) {
+    stream << i.display();
+    return stream;
 }

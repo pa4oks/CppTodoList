@@ -16,10 +16,10 @@ int main() {
 //        cout << "WAS UNABLE TO ADD NEW TASK: " + testTask.display();
 //    }
 
-    auto resultList = list.resolvedTasks();
+    vector<Task> resultList = list.resolvedTasks();
 
-    for (auto resultTask: resultList) {
-        cout << resultTask.display();
+    for (Task resultTaskperem: resultList) {
+        cout << resultTaskperem;
     }
-    return 0;
+    list[3];
 }

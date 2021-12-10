@@ -49,4 +49,10 @@ vector<Task> TodoList::resolvedTasks() {
         }
     }
     return activeTasks;
+
 }
+
+Task &TodoList::operator[](const int index) {
+    return tasks[index];
+}
+
